@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Coordenadas Geográficas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+
+    <div id="box1">
+        <h1 id="title">Conversor de formato de Coordenadas Geográficas</h1>
+         <br>
+
+         <div class="box2" > 
+
+            <table class="table" id="table1"> 
+                
+                <caption>Las latitudes sur y las longitudes oeste, introducirlas con un signo negativo al inicio.</caption>
+                <thead>
+                    <th colspan="3">Grados decimales → Grados, minutos y segundos</th>
+                    <tr>
+                        <td scope="col">Grados decimales º</td>
+                        <td scope="col">__º __' __"</td>                   
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" id="lat_DD" placeholder="Lat..."></td>
+                        <td id="lat_DMS"></td>
+                        
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="lon_DD" placeholder="Lon..."></td>
+                        <td id="lon_DMS"></td>
+                        
+                    </tr>
+                    
+                </tbody>                           
+
+            </table>
+            
+            <br>
+
+            <button class="botonCoord" id="botonToDMS" type="button">Convertir</button>
+            <button class="botonReset" id="botonReset1" type="button">Reset</button>  
+        </div>  
+        <br>
+        
+        <div class="box2">        
+               
+            <table class="table" id="table2"> 
+
+                <caption>Introducir las coordenadas separadas por un espacio entre ellas. Ej: Lat 42º 37' 32,16"N como 42 37 32,16</caption>
+                <thead>
+                    <th colspan="3">  Grados, minutos y segundos → Grados decimales</th>
+                    <tr>
+                        <td scope="col">__º __' __"</td>
+                        <td scope="col">Grados decimales º</td>                   
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" id="lat_DMS2" placeholder="Lat..."></td>
+                        <td id="lat_DD2"></td>
+                        
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="lon_DMS2" placeholder="Lon..."></td>
+                        <td id="lon_DD2"></td>
+                        
+                    </tr>
+                    
+                </tbody>           
+                
+
+            </table>
+            <br>
+            <button class="botonCoord" id="botonToDD" type="button">Convertir</button>
+            <button class="botonReset" id="botonReset2" type="button">Reset</button>  
+
+        </div>
+
+
+    </div>   
+   
+   
+    <script src="app.js"></script>
+    
+</body>
+</html>
